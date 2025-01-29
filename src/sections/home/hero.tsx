@@ -119,6 +119,8 @@ export function SpotlightPreview({
               src={fallbackImage}
               alt="Trading Illustration"
               className="w-full max-w-xl rounded-lg object-cover shadow-xl shadow-blue-500/50"
+              width={200}
+              height={200}
             />
           )}
 

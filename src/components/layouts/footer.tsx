@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
 import { IconBrandAppstore, IconBrandGooglePlay } from "@tabler/icons-react";
-import trade from "../../public/trade.svg"
 import Image from "next/image";
-import hyro from "../../public/hyrotrader_logo2.svg"
 
 export function Footer() {
   return (
@@ -22,14 +20,16 @@ export function Footer() {
               href="#"
               className="flex items-center justify-center bg-gray-800 rounded-lg px-6 py-3 hover:bg-gray-700 transition"
             >
-              <IconBrandGooglePlay className="text-3xl mr-2" /> {/* Google Play Icon */}
+              <IconBrandGooglePlay className="text-3xl mr-2" />{" "}
+              {/* Google Play Icon */}
               <span className="text-lg font-medium">Google Play</span>
             </a>
             <a
               href="#"
               className="flex items-center justify-center bg-gray-800 rounded-lg px-6 py-3 hover:bg-gray-700 transition"
             >
-              <IconBrandAppstore className="text-3xl mr-2" /> {/* App Store Icon */}
+              <IconBrandAppstore className="text-3xl mr-2" />{" "}
+              {/* App Store Icon */}
               <span className="text-lg font-medium">App Store</span>
             </a>
           </div>
@@ -96,7 +96,7 @@ export function Footer() {
                 className="flex flex-col items-center space-y-2"
               >
                 <Image
-                  src={trade}
+                  src={"/trade.svg"}
                   height={100}
                   width={100}
                   alt="TradingView Logo"
@@ -130,7 +130,7 @@ export function Footer() {
                 className="flex flex-col items-center space-y-2"
               >
                 <Image
-                  src={hyro} 
+                  src={"/hyrotrader_logo2.svg"}
                   alt="HyroTrader Logo"
                   height={100}
                   width={100}

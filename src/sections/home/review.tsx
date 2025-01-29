@@ -47,4 +47,3 @@ const testimonials = [
     title: "Prop Firm Trader",
   },
 ];
-

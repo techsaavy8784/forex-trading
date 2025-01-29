@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
 import React from "react";
 import { ArrowBigRightDash, Medal, RocketIcon, Star } from "lucide-react";
-import { ClientSideLottie } from '../lottieenable';
-import { Spotlight } from "@/components/ui/Spotlight";
+import { ClientSideLottie } from "../../app/lottieenable";
+import { Spotlight } from "@/src/components/ui/Spotlight";
 import { motion } from "framer-motion";
-import AnimationData from 'lottie-web';
+import AnimationData from "lottie-web";
 
 type SpotlightProps = {
   animationData?: typeof AnimationData;
@@ -14,7 +14,7 @@ type SpotlightProps = {
 
 export function SpotlightPreview({
   animationData,
-  fallbackImage = "https://images.pexels.com/photos/6770775/pexels-photo-6770775.jpeg?auto=compress&cs=tinysrgb&w=600"
+  fallbackImage = "https://images.pexels.com/photos/6770775/pexels-photo-6770775.jpeg?auto=compress&cs=tinysrgb&w=600",
 }: SpotlightProps) {
   const textVariant = {
     hidden: { opacity: 0, y: 50 },
@@ -23,12 +23,15 @@ export function SpotlightPreview({
 
   const spanVariant = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1, transition: { delay: 0.4, duration: 0.8 } },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { delay: 0.4, duration: 0.8 },
+    },
   };
 
   return (
     <div className="relative flex items-center justify-center min-h-screen w-full overflow-hidden p-4 pt-[70px]">
-      
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 -left-1/2 w-96 h-96 bg-blue-500/30 blur-3xl rounded-full"></div>
         <div className="absolute bottom-1/4 right-1/3 w-72 h-72 bg-indigo-600/30 blur-3xl rounded-full"></div>
@@ -38,14 +41,13 @@ export function SpotlightPreview({
 
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2 text-center md:text-left space-y-6 md:space-y-8">
-          
           <motion.h1
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg"
             variants={textVariant}
             initial="hidden"
             animate="visible"
           >
-            Master the World of 
+            Master the World of
             <motion.span
               className="block text-blue-400"
               variants={spanVariant}
@@ -54,7 +56,10 @@ export function SpotlightPreview({
             >
               Trading
             </motion.span>
-            <RocketIcon className="inline ml-2 md:ml-3 text-blue-400 drop-shadow-lg" size={24} />
+            <RocketIcon
+              className="inline ml-2 md:ml-3 text-blue-400 drop-shadow-lg"
+              size={24}
+            />
           </motion.h1>
 
           <motion.p
@@ -88,12 +93,16 @@ export function SpotlightPreview({
           >
             <div className="flex items-center space-x-3">
               <Star className="text-yellow-400 drop-shadow-lg" size={28} />
-              <span className="text-lg md:text-xl font-semibold">4.9 Reviews</span>
+              <span className="text-lg md:text-xl font-semibold">
+                4.9 Reviews
+              </span>
             </div>
             <div className="hidden md:block border-r border-gray-600 h-8"></div>
             <div className="flex items-center space-x-3">
               <Medal className="text-yellow-400 drop-shadow-lg" size={28} />
-              <span className="text-lg md:text-xl font-semibold">2000+ Learners</span>
+              <span className="text-lg md:text-xl font-semibold">
+                2000+ Learners
+              </span>
             </div>
           </motion.div>
         </div>

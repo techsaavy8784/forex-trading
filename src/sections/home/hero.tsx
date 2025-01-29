@@ -6,6 +6,7 @@ import { ClientSideLottie } from "../../app/lottieenable";
 import { Spotlight } from "@/src/components/ui/Spotlight";
 import { motion } from "framer-motion";
 import AnimationData from "lottie-web";
+import Image from "next/image";
 
 type SpotlightProps = {
   animationData?: typeof AnimationData;
@@ -114,7 +115,7 @@ export function SpotlightPreview({
               className="w-full max-w-xl shadow-xl shadow-blue-500/50 rounded-lg"
             />
           ) : (
-            <img
+            <Image
               src={fallbackImage}
               alt="Trading Illustration"
               className="w-full max-w-xl rounded-lg object-cover shadow-xl shadow-blue-500/50"

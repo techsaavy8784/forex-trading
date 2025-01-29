@@ -1,7 +1,7 @@
 import Image from "next/image";
-import darwin from "../../public/darwin.jpg";
-import forex from "../../public/forex-factory.jpg";
-import leaderb from "../../public/leaderboard.jpg";
+import darwin from "../../../public/darwin.jpg";
+import forex from "../../../public/forex-factory.jpg";
+import leaderb from "../../../public/leaderboard.jpg";
 
 export function Intro() {
   const courses = [

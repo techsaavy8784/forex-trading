@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import mentor from "../../public/mentor.jpg";
+import mentor from "../../../public/mentor.jpg";
 
 const content = [
   {
@@ -9,26 +9,28 @@ const content = [
     description: (
       <ul className="list-disc pl-6 space-y-2 text-gray-200 text-base md:text-lg">
         <li>
-          David is a professional trader with over 15 years of experience in the markets.
+          David is a professional trader with over 15 years of experience in the
+          markets.
         </li>
         <li>
-          Winner of multiple trading competitions, including Forex Factory 2019 and Darwinex.
+          Winner of multiple trading competitions, including Forex Factory 2019
+          and Darwinex.
+        </li>
+        <li>Full-time trader for more than 10 years.</li>
+        <li>
+          Worked with various trading brokers, platforms, and proprietary
+          trading firms.
         </li>
         <li>
-          Full-time trader for more than 10 years.
-        </li>
-        <li>
-          Worked with various trading brokers, platforms, and proprietary trading firms.
-        </li>
-        <li>
-          Has successfully helped over 200 traders achieve profitability in the markets.
+          Has successfully helped over 200 traders achieve profitability in the
+          markets.
         </li>
       </ul>
     ),
     content: (
       <div className="flex justify-center items-center w-full">
         <Image
-          src={mentor}
+          src={"/mentor.jpg"}
           width={600}
           height={600}
           className="rounded-3xl object-cover shadow-lg"
